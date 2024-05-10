@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
 
 :root {
-  --dark-grey-start: #3e3e3e;
-  --dark-grey-mid: #2c2b2b;
-  --dark-grey-end: #121111;
+  --dark-grey-start: #333333; /* darker shade for the gradient start */
+  --dark-grey-mid: #222222; /* mid shade for the gradient */
+  --dark-grey-end: #111111; /* darkest shade for the gradient */
 }
 
-body {
-  color: white;
-  font-family: "Nunito Sans", sans-serif;
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100vw;
   overflow: hidden;
   background: linear-gradient(
     to right,
@@ -22,7 +22,7 @@ body {
     var(--dark-grey-end)
   );
   background-size: 200% 100%;
-  animation: gradientShift 3s ease infinite alternate;
+  animation: gradientShift 4s ease infinite alternate;
 }
 
 @keyframes gradientShift {
@@ -32,19 +32,6 @@ body {
   100% {
     background-position: 100% 50%;
   }
-}
-
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  color: white;
-  font-family: "Nunito Sans", sans-serif;
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .content {
@@ -98,6 +85,7 @@ span {
 
 .social-links a:hover {
   transform: scale(1.2);
+  animation: pulse 1.33487564385s infinite alternate ease-in-out;
   color: #4a90e2;
 }
 
@@ -110,110 +98,34 @@ span {
   margin-top: 20px;
 }
 
-@keyframes zoom {
-  0%,
-  100% {
+.certifications a {
+  display: inline-block;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  color: whitesmoke;
+  text-decoration: none;
+  animation: pulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
     transform: scale(1);
   }
   50% {
-    transform: scale(0.9);
+    transform: scale(1.05);
   }
-}
-
-.certifications a {
-  display: inline-block;
-  color: whitesmoke;
-  text-decoration: none;
-  animation: zoom 3s ease-in-out infinite;
+  100% {
+    transform: scale(1);
+  }
 }
 
 .certifications a:hover {
   color: #4a90e2;
   text-decoration: underline;
+  animation: none;
 }
 
 .outreach-message {
   padding-top: 32px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.nav-link {
-  margin: 0 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 10px 15px;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #4a90e2;
-  transform: scale(1.1);
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  padding: 20px;
-  overflow-y: auto;
-}
-
-.project-card {
-  background: #ffffff;
-  color: #333;
-  width: calc((100% / 3) - 40px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.project-info {
-  padding: 15px;
-  text-align: center;
-}
-
-.project-info h3 {
-  margin-top: 0;
-}
-
-.project-info a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-  text-decoration: none;
-}
-
-.project-info a:hover {
-  text-decoration: underline;
-}
-
-.project-info svg {
-  margin-right: 8px;
 }
 
 @media (max-width: 768px) {
@@ -235,15 +147,6 @@ span {
   .social-links a {
     margin: 0 10px;
     padding: 3px 8px;
-  }
-
-  .project-card {
-    width: calc(100% - 20px);
-    margin-bottom: 20px;
-  }
-
-  .project-image {
-    height: 180px;
   }
 }
 
@@ -282,16 +185,6 @@ span {
   .outreach-message {
     padding-top: 20px;
   }
-
-  .project-card {
-    width: 100%;
-    padding: 8px;
-  }
-
-  .project-info h3,
-  .project-info p {
-    font-size: 0.9rem;
-  }
 }
 
 @media (max-width: 375px) {
@@ -315,14 +208,5 @@ span {
   .certifications a,
   .programming-languages code {
     font-size: 0.75rem;
-  }
-
-  .project-card {
-    padding: 5px;
-    margin-bottom: 15px;
-  }
-
-  .project-info {
-    padding: 10px;
   }
 }
