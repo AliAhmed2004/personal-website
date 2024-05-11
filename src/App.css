@@ -216,7 +216,13 @@ span {
   margin-right: 8px;
 }
 
+/* Media queries for specific mobile view adjustments */
 @media (max-width: 768px) {
+  .home-content {
+    /* New class for home screen specific content */
+    padding: 10px; /* Reduced padding */
+  }
+
   .content {
     width: 90%;
     max-width: none;
