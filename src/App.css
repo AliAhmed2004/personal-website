@@ -282,7 +282,12 @@ span {
     width: calc((100% / 3) - 40px);
     padding: 15px;
   }
-
+  .projects-container {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 10px;
+    scroll-snap-align: start;
+  }
   .project-info h3,
   .project-info p {
     font-size: 1rem;
@@ -355,7 +360,12 @@ span {
     width: 100%;
     padding: 8px;
   }
-
+  .projects-container {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 10px;
+    scroll-snap-align: start;
+  }
   .project-info h3,
   .project-info p {
     font-size: 0.9rem;
@@ -421,6 +431,13 @@ span {
 
   .outreach-message {
     padding-top: 15px;
+  }
+
+  .projects-container {
+    flex: 0 0 auto;
+    width: 80%;
+    margin: 10px;
+    scroll-snap-align: start;
   }
 
   .project-card {
