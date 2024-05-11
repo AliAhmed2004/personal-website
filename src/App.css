@@ -249,17 +249,17 @@ span {
 
 @media (max-width: 375px) {
   .navbar {
-    padding: 5px 0;
-    font-size: 0.9rem;
+    padding: 3px 0;
+    font-size: 0.85rem;
   }
 
   .nav-link {
-    padding: 8px 10px;
-    font-size: 0.9rem;
+    padding: 6px 8px;
+    font-size: 0.85rem;
   }
 
   .App {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 
   .content,
@@ -267,17 +267,57 @@ span {
   .social-links,
   .certifications,
   .programming-languages {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 
   .social-links svg,
   .project-info svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 
   .project-card {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    padding: 8px;
+    width: 92%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 3px;
+  }
+
+  .social-links a,
+  .programming-languages code {
+    margin: 1px;
+    padding: 2px 5px;
+  }
+
+  .certifications a,
+  .programming-languages code {
+    font-size: 0.75rem;
+  }
+
+  .outreach-message {
+    padding-top: 15px;
+  }
+
+  .project-card {
+    width: calc(100% - 10px);
+    padding: 6px;
+  }
+
+  .project-info h3,
+  .project-info p {
+    font-size: 0.85rem;
   }
 }
 
