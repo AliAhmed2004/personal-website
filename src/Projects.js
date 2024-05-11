@@ -6,22 +6,8 @@ import ai from "./ai.jpg";
 import hub from "./hub.jpg";
 
 const Projects = () => {
-  const scrollContainerRef = useRef(null);
-
-  useEffect(() => {
-    const container = scrollContainerRef.current;
-
-    console.log("Initial scrollLeft:", container.scrollLeft);
-
-    container.scrollLeft = 0;
-
-    setTimeout(() => {
-      console.log("Delayed scrollLeft:", container.scrollLeft);
-    }, 500);
-  }, []);
-
   return (
-    <div ref={scrollContainerRef} className="projects-container">
+    <div className="projects-container">
       <div className="project-card">
         <img
           src={stock}
@@ -45,8 +31,8 @@ const Projects = () => {
         <div className="project-info">
           <h3>AI Image Generator</h3>
           <p>
-            A project that uses the OpenAI API to generate images of different
-            prompts the user inputs
+            A project that uses the OpenAI API to generate images based on user
+            prompts
           </p>
           <a
             href="https://github.com/AliAhmed2004/ai-image-generator"
