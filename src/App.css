@@ -216,17 +216,7 @@ span {
   margin-right: 8px;
 }
 
-/* Media queries for specific mobile view adjustments */
 @media (max-width: 768px) {
-  .App {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .home-content {
-    /* New class for home screen specific content */
-    padding: 10px; /* Reduced padding */
-  }
-
   .content {
     width: 90%;
     max-width: none;
@@ -258,10 +248,6 @@ span {
 }
 
 @media (max-width: 375px) {
-  .App {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .navbar {
     padding: 5px 0;
     font-size: 0.9rem;
@@ -296,10 +282,6 @@ span {
 }
 
 @media (max-width: 480px) {
-  .App {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .content {
     padding: 10px;
     width: 95%;
