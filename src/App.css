@@ -217,37 +217,167 @@ span {
 }
 
 @media (max-width: 768px) {
+  .App {
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
   .content {
+    padding: 10px;
     width: 90%;
-    max-width: none;
+  }
+
+  .navbar {
+    padding: 5px 0;
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    padding: 8px 10px;
+    font-size: 1rem;
+  }
+
+  .social-links svg,
+  .project-info svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
   }
 
   h1 {
     font-size: 2rem;
   }
 
-  .social-links svg {
-    width: 20px;
-    height: 20px;
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 10px;
   }
 
-  .programming-languages code,
-  .social-links a {
-    margin: 0 10px;
+  .social-links a,
+  .programming-languages code {
+    margin: 5px;
     padding: 3px 8px;
   }
 
-  .project-card {
-    width: calc(100% - 20px);
-    margin-bottom: 20px;
+  .certifications a,
+  .programming-languages code {
+    font-size: 0.9rem;
   }
 
-  .project-image {
-    height: 180px;
+  .outreach-message {
+    padding-top: 20px;
+  }
+
+  .project-card {
+    width: calc((100% / 3) - 40px);
+    padding: 15px;
+  }
+
+  .project-info h3,
+  .project-info p {
+    font-size: 1rem;
   }
 }
 
+@media (max-width: 480px) {
+  .App {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .content {
+    padding: 10px;
+    width: 95%;
+  }
+
+  .navbar {
+    padding: 5px 0;
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .social-links svg,
+  .project-info svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .project-card {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 5px;
+  }
+
+  .social-links a,
+  .programming-languages code {
+    margin: 2px;
+    padding: 2px 6px;
+  }
+
+  .certifications a,
+  .programming-languages code {
+    font-size: 0.8rem;
+  }
+
+  .outreach-message {
+    padding-top: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .project-info h3,
+  .project-info p {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 375px) {
+  .App {
+    justify-content: flex-start;
+    padding-top: 20px;
+  }
+
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .content {
+    padding: 8px;
+    width: 92%;
+  }
+
   .navbar {
     padding: 3px 0;
     font-size: 0.85rem;
@@ -258,18 +388,6 @@ span {
     font-size: 0.85rem;
   }
 
-  .App {
-    padding-top: 30px;
-  }
-
-  .content,
-  .projects-container,
-  .social-links,
-  .certifications,
-  .programming-languages {
-    padding-top: 15px;
-  }
-
   .social-links svg,
   .project-info svg {
     width: 14px;
@@ -278,11 +396,6 @@ span {
 
   .project-card {
     margin-bottom: 10px;
-  }
-
-  .content {
-    padding: 8px;
-    width: 92%;
   }
 
   h1 {
@@ -318,52 +431,5 @@ span {
   .project-info h3,
   .project-info p {
     font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .content {
-    padding: 10px;
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  .social-links {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 5px;
-  }
-
-  .social-links a,
-  .programming-languages code {
-    margin: 2px;
-    padding: 2px 6px;
-  }
-
-  .social-links svg {
-    width: 18px;
-    height: 18px;
-  }
-
-  .certifications a,
-  .programming-languages code {
-    font-size: 0.8rem;
-  }
-
-  .outreach-message {
-    padding-top: 20px;
-  }
-
-  .project-card {
-    width: 100%;
-    padding: 8px;
-  }
-
-  .project-info h3,
-  .project-info p {
-    font-size: 0.9rem;
   }
 }
