@@ -26,7 +26,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="project-card">
-        <img src={ai} alt="AI Image Generator" className="project-image" />
+        <img src={ai} alt="AI" className="project-image" />
         <div className="project-info">
           <h3>AI Image Generator</h3>
           <p>
