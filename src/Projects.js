@@ -3,6 +3,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import stock from "./stock.jpg";
 import ai from "./ai.jpg";
 import hub from "./hub.jpg";
+import heart from "./heart.jpg";
+import ios from "./ios.jpg";
 
 const Projects = () => {
   return (
@@ -18,6 +20,23 @@ const Projects = () => {
           <p>A machine learning model used to analyze Twitter stocks</p>
           <a
             href="https://github.com/AliAhmed2004/Twitter-Stock-Analysis--Machine-Learning-Model"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project-card">
+        <img src={heart} alt="Heart Disease Model" className="project-image" />
+        <div className="project-info">
+          <h3>Heart Disease Prediction</h3>
+          <p>
+            A machine learning model used to predict whether or not someone has
+            heart disease based on their medical history
+          </p>
+          <a
+            href="https://github.com/AliAhmed2004/Machine-Learning-Model---Heart-Disease-Prediction"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,6 +75,20 @@ const Projects = () => {
           </p>
           <a
             href="https://github.com/abrarmurad416/laurier-student-study-hub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project-card">
+        <img src={ios} alt="ios17UI" className="project-image" />
+        <div className="project-info">
+          <h3>iOS 17 UI</h3>
+          <p>A design of the iOS-17 lockscreen UI using react native</p>
+          <a
+            href="https://github.com/AliAhmed2004/ios17-ui"
             target="_blank"
             rel="noopener noreferrer"
           >
