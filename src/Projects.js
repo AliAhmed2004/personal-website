@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import stock from "./stock.jpg";
 import ai from "./ai.jpg";
 import hub from "./hub.jpg";
@@ -56,8 +57,17 @@ const Projects = () => {
             href="https://github.com/AliAhmed2004/ai-image-generator"
             target="_blank"
             rel="noopener noreferrer"
+            className="project-link"
           >
             <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+          <a
+            href="https://image-generator-openai.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <FontAwesomeIcon icon={faLaptopCode} /> Demo
           </a>
         </div>
       </div>
@@ -77,8 +87,17 @@ const Projects = () => {
             href="https://github.com/abrarmurad416/laurier-student-study-hub"
             target="_blank"
             rel="noopener noreferrer"
+            className="project-link"
           >
             <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+          <a
+            href="https://lsshub.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <FontAwesomeIcon icon={faLaptopCode} /> Demo
           </a>
         </div>
       </div>
