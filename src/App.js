@@ -1,7 +1,5 @@
-import "./App.css";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 import Home from "./Home";
 import Projects from "./Projects";
 
@@ -11,10 +9,10 @@ const App = () => {
       <div className="App">
         <nav className="navbar">
           <Link to="/" className="nav-link">
-            <FontAwesomeIcon icon={faHome} /> Home
+            Home
           </Link>
           <Link to="/projects" className="nav-link">
-            <FontAwesomeIcon icon={faCode} /> Projects
+            Projects
           </Link>
         </nav>
         <Routes>
