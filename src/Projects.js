@@ -6,6 +6,7 @@ import ai from "./ai.jpg";
 import hub from "./hub.jpg";
 import heart from "./heart.jpg";
 import ios from "./ios.jpg";
+import knight from "./knight.jpg";
 
 const Projects = () => {
   return (
@@ -112,6 +113,31 @@ const Projects = () => {
             rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+        </div>
+      </div>
+      <div className="project-card">
+        <img src={knight} alt="knight" className="project-image" />
+        <div className="project-info">
+          <h3>Knight's Tour</h3>
+          <p>
+            An algorithm that moves the knight on a chessboard such that it
+            visits every square exactly once
+          </p>
+          <a
+            href="https://github.com/onefouroneIndustries/KnightsTour"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+          <a
+            href="https://github.com/onefouroneIndustries/KnightsTour"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-link"
+          >
+            <FontAwesomeIcon icon={faLaptopCode} /> Demo
           </a>
         </div>
       </div>
