@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Projects from "./Projects";
 import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faCode } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
   return (
@@ -10,10 +12,10 @@ const App = () => {
       <div className="App">
         <nav className="navbar">
           <Link to="/" className="nav-link">
-            Home
+            <FontAwesomeIcon icon={faHome} /> Home
           </Link>
           <Link to="/projects" className="nav-link">
-            Projects
+            <FontAwesomeIcon icon={faCode} /> Projects
           </Link>
         </nav>
         <Routes>
