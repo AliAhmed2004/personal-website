@@ -132,7 +132,7 @@ const Projects = () => {
             <FontAwesomeIcon icon={faGithub} /> GitHub
           </a>
           <a
-            href="https://github.com/onefouroneIndustries/KnightsTour"
+            href="https://aknightstour.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="project-link"
